@@ -1,0 +1,79 @@
+/* CSS Reset  */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* body */
+body {
+	font: 14px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;
+	background-color: #f8f8f8;
+	color: #333;
+}
+
+/* card container */
+.card {
+	width: 332px;
+	margin: 50px auto;
+	padding: 15px;
+	border: 1px solid #cecece;
+	box-shadow: 10px 10px 0 0 #e6e6e6;
+	background: #fff;
+	border-radius: 3px;
+}
+
+/* animal name */
+.name {
+	font-size: 20px;
+	margin: 10px 0 20px;
+}
+
+/* My photo */
+.my-photo {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+/* My detail container */
+.my-detail {
+	border: 1px solid #cecece;
+	padding: 10px;
+}
+
+.fact {
+	font-style: italic;
+	color: #666;
+}
+
+.items {
+	list-style: none;
+	margin: 15px 0;
+}
+
+.items li span {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.items a {
+	text-decoration: none;
+	color: #666;
+}
+
+.items a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.description {
+	margin-bottom: 15px;
+}
