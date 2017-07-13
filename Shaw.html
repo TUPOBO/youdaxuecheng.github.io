@@ -19,7 +19,7 @@
         border-radius: 10px;
         box-shadow: darkgray 0 0 1em;
         padding: 20px;
-        margin: 50px auto;
+        margin: 22px auto;
       }
       h2 {
         font-size: 2.8em;
@@ -34,8 +34,39 @@
         font-weight: normal;
         color: gray;
       }
-      img {
+      .card {
         width: 300px;
+        height: 300px;
+        perspective: 100;
+      }
+      .card:hover .sides{
+        transform: rotateY(180deg);
+      }
+      .sides {
+        position: relative;
+        transform-style: preserve-3d;
+        transition: .6s;
+      }
+      .sides,
+      .front,
+      .back {
+        width: 300px;
+        height: 300px;
+      }
+      .front,
+      .end {
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        box-shadow: lightslategray 0 0 0.5em;
+      }
+      .front {
+        z-index: 2;
+        transform: rotateY(0);
+      }
+      .back {
+        transform: rotateY(180deg);
       }
       .intro {
         position: relative;
@@ -70,14 +101,18 @@
     <div class="container">
       <h2>Shaw</h2>
       <h6><i>Udacity FEND Mentor</i></h6>
-      <img src="assets/Shaw.jpg" alt="avator">
+      <div class="card">
+        <div class="sides">
+          <img class="front" src="assets/Shaw.jpg" alt="avator">
+          <img class="back" src="assets/Shaw_qrcode.png" alt="qrcode">
+        </div>
+      </div>
       <div class="intro">
         <p class="info">明光村职业技术学院土著一枚。<br />本命编程，业余画画。<br/>请多指教 :)</p>
         <ul>
           <li><a href="https://discussions.youdaxue.com/u/shaw/summary" target="_blank">Udacity Forum Page</a></li>
           <li><a href="https://codepen.io/Arthur-Conan-Dog" target="_blank">CodePen Demos</a></li>
         </ul>
-        <div class="decoration"></div>
         <div class="decoration"></div>
       </div>
     </div>
