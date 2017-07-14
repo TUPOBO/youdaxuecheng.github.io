@@ -1,0 +1,48 @@
+/* add your CSS here */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.animal-card {
+    width: 300px;
+    margin: 20px auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(192, 192, 192, 0.3);
+    border-radius: 5px;
+    box-shadow: 3px 2px 3px #c0c0c0;
+    padding: 15px;
+}
+
+.animal-name {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+.animal-information {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(192, 192, 192, 0.3);
+    font-size: 0.9em;
+    padding: 15px 10px;
+    margin-top: 10px;
+    line-height: 1.6em;
+    letter-spacing: 0.1em;
+}
+
+.interesting-facts {
+    font-style: italic;
+}
+
+.animal-information ul {
+    list-style: none;
+    margin: 15px auto;
+}
+
+.animal-attribute-name {
+    font-weight: bold;
+}
