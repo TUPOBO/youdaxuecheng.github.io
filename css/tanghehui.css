@@ -1,0 +1,61 @@
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* body */
+body {
+    font: 14px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+.name{
+    margin: 10px 0 20px 0;
+    font-size: 24px;
+}
+.card{
+    width: 340px;
+    padding: 25px;
+    margin: 20px auto;
+    border: 1px solid #cecece;
+    box-shadow: 10px 10px 0 0 #e6e6e6;
+    background: #fff;
+    border-radius: 3px;
+}
+.img{
+    padding: 15px 0 15px 0;
+    width: 100%;
+}
+.personal-info{
+    width: 100%;
+    border: 1px solid #cecece;
+    padding: 10px;
+}
+.no-dot-list
+{
+    list-style-type: none;
+    list-style-position: outside;
+}
+li
+{
+    font-style: normal;;
+}
+
+li>span
+{
+    font-weight: bold;
+    font-style: normal;
+}
+p{
+    margin-bottom: 20px;
+    font-style: italic;
+}
